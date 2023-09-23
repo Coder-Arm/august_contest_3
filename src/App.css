@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #292828;
+  padding: 8px;
+}
+.nav-left{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+.nav-left img{
+  width: 70px;
+  height: 50px;
+}
+.logo-name > span:first-of-type{
+color: white;
+font-size: 1.2em;
+}
+.logo-name > span:last-of-type{
+  color: rgba(255, 255, 255, 0.495);
+}
+
+.search-box{
+  width: 50%;
+  display: flex;
+  position: relative;
+}
+.search-box img{
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.search-box input{
+  width: 70%;
+  padding: 10px;
+  padding-left: 35px;
+  background-color: #373737;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.search-box input:focus{
+  outline: none;
+}
+.search-box button{
+  margin-left: 10px;
+  width: 20%;
+  background: transparent;
+  align-self: stretch;
+  border: 1px solid white;
+  color: white;
+}
+.nav-right > img{
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+}
+main{
+  background: #242121;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+.card{
+  width: 20%;
+  cursor: pointer;
+}
+.card > img{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.header-card,.main-header,.single-card{
+  display: flex;
+}
+.main-header{
+  padding: 40px 25px;
+  justify-content: space-around;
+  gap: 60px;
+
+  }
+.header-card,.single-card{
+  padding: 10px;
+  flex-grow: 1;
+  gap: 25px;
+ background: #71C5F461;
+ border-radius: 5px;
+}
+.header-card img,.single-card img{
+transform: rotate(-5deg);
+scale: 1.25;
+}
+.header-card p,.single-card p{
+  margin-top: 10px;
+  font-size: 0.9em;
+  opacity: 0.75;
+}
+.header-card button,.single-card button{
+  margin-top: 10px;
+  background: transparent;
+  border: 1px solid white;
+  padding: 4px 12px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.single-card{
+  position: relative;
+}
+.btns{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.publish-date{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
